@@ -2,18 +2,18 @@ import * as React from "react";
 
 const CheckIcon = (props) => (
   <svg
-    width="800px"
-    height="800px"
+    width="24px"
+    height="24px"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
     {...props}
   >
-    <rect width={24} height={24} fill="white" />
+    <rect width={24} height={24} fill="" />
     <path
       d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7"
-      stroke="#000000"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -22,24 +22,24 @@ const CheckIcon = (props) => (
 
 const CloseIcon = (props) => (
   <svg
-    width="800px"
-    height="800px"
+    width="24px"
+    height="24px"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
     {...props}
   >
-    <rect width={24} height={24} fill="white" />
+    <rect width={24} height={24} fill="" />
     <path
       d="M7 17L16.8995 7.10051"
-      stroke="#000000"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M7 7.00001L16.8995 16.8995"
-      stroke="#000000"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -48,9 +48,9 @@ const CloseIcon = (props) => (
 
 const ErrorIcon = (props) => (
   <svg
-    fill="#000000"
-    width="800px"
-    height="800px"
+    fill="#fff"
+    width="24px"
+    height="24px"
     viewBox="0 0 1024 1024"
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
@@ -62,8 +62,8 @@ const ErrorIcon = (props) => (
 
 const InfoIcon = (props) => (
   <svg
-    width="800px"
-    height="800px"
+    width="24px"
+    height="24px"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"

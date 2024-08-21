@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useCallback, useState } from "react";
 import Notification from "../components/notification";
 
 const divPosition = {
@@ -10,10 +10,11 @@ const divPosition = {
   "bottom-center": "bottom-2 fixed z-50 left-1/2 -translate-x-1/2",
 };
 
-const useNotification = (position = "top-right") => {
+const useNotification = () => {
   const [notification, setNotification] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const [timer, setTimer] = useState(null);
+  const [position, setPosition] = useState("top-right");
 
   const triggerNotification = useCallback((props) => {
     if (timer) {
@@ -21,6 +22,7 @@ const useNotification = (position = "top-right") => {
     }
 
     setNotification(props);
+    setPosition(props.position || "top-right");
     setIsVisible(true);
 
     const newTimer = setTimeout(() => {
